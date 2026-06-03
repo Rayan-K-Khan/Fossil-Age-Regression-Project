@@ -4,7 +4,7 @@ A supervised machine learning project that predicts the **geological age of foss
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 | | |
 |---|---|
@@ -15,7 +15,7 @@ A supervised machine learning project that predicts the **geological age of foss
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 The dataset contains paleontological records with the following features:
 
@@ -32,7 +32,7 @@ The dataset contains paleontological records with the following features:
 
 ---
 
-## 🔧 Methodology
+## Methodology
 
 ### 1. Exploratory Data Analysis (EDA)
 - Distribution analysis via KDE plots and pairplot matrix
@@ -52,7 +52,7 @@ The dataset contains paleontological records with the following features:
 | XGBoost (baseline) | ~20 | ~0.96 |
 | Simple Neural Network | 110.42 | — |
 | Complex Neural Network | 44.50 | — |
-| **Tuned XGBoost** ✅ | **9.55** | **0.990** |
+| **Tuned XGBoost** | **9.55** | **0.990** |
 
 ### 4. Hyperparameter Tuning
 `RandomizedSearchCV` with 5-fold cross-validation was used to tune XGBoost over:
@@ -82,7 +82,7 @@ colsample_bytree: 0.7377
 
 ---
 
-## 📊 Results
+## Results
 
 The **tuned XGBoost regressor** was selected as the final model:
 
@@ -96,7 +96,7 @@ Neural networks underperformed relative to XGBoost on this structured tabular da
 
 ---
 
-## 🛠️ Installation & Usage
+## Installation & Usage
 
 ```bash
 # Clone the repo
@@ -124,7 +124,7 @@ statsmodels
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 fossil-age-prediction/
@@ -136,7 +136,7 @@ fossil-age-prediction/
 
 ---
 
-## 🔍 Key Takeaways
+## Key Takeaways
 
 - XGBoost significantly outperforms neural networks on this structured paleontological dataset
 - Taxonomic features (`class`, `phylum`, `taxon_name`) are strong predictors of geological age
