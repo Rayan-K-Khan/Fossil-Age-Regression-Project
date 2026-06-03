@@ -1,4 +1,4 @@
-# 🦴 Fossil Age Prediction
+# Fossil Age Prediction
 
 A supervised machine learning project that predicts the **geological age of fossils** (in millions of years) using paleontological and geospatial features. Four regression models were benchmarked and optimized, with a tuned XGBoost achieving **R² = 0.990** and **RMSE = 9.55 Myr**.
 
